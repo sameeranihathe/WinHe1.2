@@ -36,9 +36,13 @@ namespace BusinessLogic
         {
             return this.pd.Delete(pid);
         }
-        public  SearchProduct(string txt)
+        public  List<ProductsModel> SearchProduct(string txt)
         {
+            List<ProductsModel> returnList = new List<ProductsModel>();
 
+            returnList = this.pd.GetSearchData(txt);
+
+            return returnList;
         }
     }
 }

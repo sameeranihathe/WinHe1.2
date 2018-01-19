@@ -39,7 +39,7 @@
             // 
             // btn_search
             // 
-            this.btn_search.Location = new System.Drawing.Point(462, 31);
+            this.btn_search.Location = new System.Drawing.Point(460, 24);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(88, 29);
             this.btn_search.TabIndex = 0;

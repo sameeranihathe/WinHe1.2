@@ -93,6 +93,8 @@ namespace WInHe1._2
             String search_text = txt_search.Text;
 
             List<ProductsModel> list = this.pbl.SearchProduct(search_text);
+
+            dgv_products.DataSource = list;
         }
     }
 }
