@@ -1,0 +1,14 @@
+F:\C# projects\WInHe1.2\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+F:\C# projects\WInHe1.2\BusinessLogic\bin\Debug\BusinessLogic.dll
+F:\C# projects\WInHe1.2\BusinessLogic\bin\Debug\BusinessLogic.pdb
+F:\C# projects\WInHe1.2\BusinessLogic\bin\Debug\DataLogic.dll
+F:\C# projects\WInHe1.2\BusinessLogic\bin\Debug\EntityFramework.dll
+F:\C# projects\WInHe1.2\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+F:\C# projects\WInHe1.2\BusinessLogic\bin\Debug\Model.dll
+F:\C# projects\WInHe1.2\BusinessLogic\bin\Debug\DataLogic.pdb
+F:\C# projects\WInHe1.2\BusinessLogic\bin\Debug\Model.pdb
+F:\C# projects\WInHe1.2\BusinessLogic\bin\Debug\EntityFramework.xml
+F:\C# projects\WInHe1.2\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+F:\C# projects\WInHe1.2\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+F:\C# projects\WInHe1.2\BusinessLogic\obj\Debug\BusinessLogic.dll
+F:\C# projects\WInHe1.2\BusinessLogic\obj\Debug\BusinessLogic.pdb
