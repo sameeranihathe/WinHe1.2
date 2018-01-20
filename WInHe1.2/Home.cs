@@ -23,5 +23,19 @@ namespace WInHe1._2
             pr.Show();
             this.Hide();
         }
+
+        private void btn_customers_Click(object sender, EventArgs e)
+        {
+            Customers cs = new Customers();
+            cs.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Invoices iv = new Invoices();
+            iv.Show();
+            this.Hide();
+        }
     }
 }

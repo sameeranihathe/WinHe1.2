@@ -51,6 +51,7 @@
             this.btn_customers.TabIndex = 1;
             this.btn_customers.Text = "Customers";
             this.btn_customers.UseVisualStyleBackColor = true;
+            this.btn_customers.Click += new System.EventHandler(this.btn_customers_Click);
             // 
             // button3
             // 
@@ -60,6 +61,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Invoices";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form_home
             // 

@@ -1,1 +1,8 @@
+F:\C# projects\WInHe1.2\WInHe1.2\obj\Debug\WInHe1.2.csprojResolveAssemblyReference.cache
+F:\C# projects\WInHe1.2\WInHe1.2\obj\Debug\WInHe1._2.AddProduct.resources
+F:\C# projects\WInHe1.2\WInHe1.2\obj\Debug\WInHe1._2.EditProduct.resources
+F:\C# projects\WInHe1.2\WInHe1.2\obj\Debug\WInHe1._2.Form_home.resources
+F:\C# projects\WInHe1.2\WInHe1.2\obj\Debug\WInHe1._2.Products.resources
+F:\C# projects\WInHe1.2\WInHe1.2\obj\Debug\WInHe1._2.Properties.Resources.resources
+F:\C# projects\WInHe1.2\WInHe1.2\obj\Debug\WInHe1.2.csproj.GenerateResource.Cache
 F:\C# projects\WInHe1.2\WInHe1.2\bin\Debug\WInHe1.2.exe.config
