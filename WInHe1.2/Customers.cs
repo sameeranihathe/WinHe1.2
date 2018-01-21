@@ -16,5 +16,19 @@ namespace WInHe1._2
         {
             InitializeComponent();
         }
+
+        private void btn_home_Click(object sender, EventArgs e)
+        {
+            Form_home home = new Form_home();
+            home.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AddCustomer ac = new AddCustomer();
+            ac.Show();
+            this.Hide();
+        }
     }
 }

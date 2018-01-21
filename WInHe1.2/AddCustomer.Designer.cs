@@ -1,6 +1,6 @@
 ﻿namespace WInHe1._2
 {
-    partial class Invoices
+    partial class AddCustomer
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Invoices
+            // AddCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 469);
-            this.Name = "Invoices";
-            this.Text = "Invoices";
+            this.ClientSize = new System.Drawing.Size(558, 461);
+            this.Name = "AddCustomer";
+            this.Text = "AddCustomer";
             this.ResumeLayout(false);
 
         }

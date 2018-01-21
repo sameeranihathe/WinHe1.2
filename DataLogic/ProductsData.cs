@@ -110,32 +110,32 @@ namespace DataLogic
            return isSaved;
        }
 
-       public List<ProductsModel> GetSearchData(string txt)
-       {
-           List<ProductsModel> dataList = new List<ProductsModel>();
+        /*  public List<ProductsModel> GetSearchData(string txt)
+          {
+              List<ProductsModel> dataList = new List<ProductsModel>();
 
-           try
-           {
-               using (WinHeDbEntities context = new WinHeDbEntities())
-               {
-                   List<ProductsData> list = (from recodes in context.tbl_product where (recodes.Product_Name.Contains(txt))select recodes).ToList();
+              try
+              {
+                  using (WinHeDbEntities context = new WinHeDbEntities())
+                  {
+                      List<ProductsData> list = (from recodes in context.tbl_product where (recodes.Product_Name.Contains(txt))select recodes).ToList();
 
-                   foreach (ProductsData item in list)
-                   {
-                       ProductsModel pd = new ProductsModel();
+                      foreach (ProductsData item in list)
+                      {
+                          ProductsModel pd = new ProductsModel();
 
-                       pd.product_id = item.
-                   }
-               }
-           }
-           catch (Exception)
-           {
+                          pd.product_id = item.Product_id;
+                      }
+                  }
+              }
+              catch (Exception)
+              {
                
-               throw;
-           }
+                  throw;
+              }
 
-           return null;
+              return null;
 
-       }
+          } */
     }
 }
