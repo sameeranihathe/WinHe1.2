@@ -26,5 +26,39 @@ namespace DataLogic
                 db.SaveChanges();
             }
         }
+
+        public List<CostomerModel> GetData()
+        {
+            List<CostomerModel> customers = new List<CostomerModel>();
+            try
+            {
+                using (WinHeDbEntities context = new WinHeDbEntities())
+                {
+                    List<tbl_customer> list = (from recodes in context.tbl_customer select recodes).ToList();
+
+                    foreach (tbl_customer item in list)
+                    {
+                        CostomerModel cm = new CostomerModel();
+
+                        cm.cus_name = item.Customer_Name;
+                        cm.cus_email = item.Customer_Email;
+                        cm.cus_address = item.Address;
+                        cm.cus_dob = Convert.ToDateTime(item.DOB);
+                        cm.cus_gender = item.Gender;
+                        cm.cus_contact = Convert.ToInt32(item.ContactNo);
+
+                        customers.Add(cm);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+
+            return customers;
+
+        }
     }
 }

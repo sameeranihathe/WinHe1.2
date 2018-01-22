@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Model;
+using BusinessLogic;
 
 namespace WInHe1._2
 {
     public partial class Customers : Form
     {
+        CustomerBusinessLogic cb = new CustomerBusinessLogic();
         public Customers()
         {
             InitializeComponent();
@@ -33,7 +36,13 @@ namespace WInHe1._2
 
         private void Customers_Load(object sender, EventArgs e)
         {
-
+            SetData();
+            dgv_customers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+        private void SetData()
+        {
+            List<CostomerModel> relist = cb.getCustomer();
+            dgv_customers.DataSource = relist;
         }
     }
 }

@@ -16,5 +16,13 @@ namespace BusinessLogic
         {
             cd.Insert(cm);
         }
+
+        public List<CostomerModel> getCustomer()
+        {
+            List<CostomerModel> returnList = new List<CostomerModel>();
+            returnList = this.cd.GetData();
+
+            return returnList;
+        }
     }
 }
