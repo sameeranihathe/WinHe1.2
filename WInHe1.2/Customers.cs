@@ -30,5 +30,10 @@ namespace WInHe1._2
             ac.Show();
             this.Hide();
         }
+
+        private void Customers_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

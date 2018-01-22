@@ -148,12 +148,13 @@
             // 
             // btn_add
             // 
-            this.btn_add.Location = new System.Drawing.Point(455, 499);
+            this.btn_add.Location = new System.Drawing.Point(455, 481);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(75, 23);
             this.btn_add.TabIndex = 14;
             this.btn_add.Text = "Add";
             this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // AddCustomer
             // 

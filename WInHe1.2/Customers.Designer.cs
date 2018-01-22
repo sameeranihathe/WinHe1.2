@@ -93,6 +93,7 @@
             this.Controls.Add(this.dgv_customers);
             this.Name = "Customers";
             this.Text = "Customers";
+            this.Load += new System.EventHandler(this.Customers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_customers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

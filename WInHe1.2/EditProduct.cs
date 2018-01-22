@@ -53,5 +53,12 @@ namespace WInHe1._2
             p.Show();
             this.Hide();
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            Products pd = new Products();
+            pd.Show();
+            this.Hide();
+        }
     }
 }

@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Model;
 
 namespace WInHe1._2
 {
     public partial class AddCustomer : Form
     {
+        CostomerModel cm = new CostomerModel(); 
+        
         public AddCustomer()
         {
             InitializeComponent();
@@ -24,6 +27,12 @@ namespace WInHe1._2
 
         private void label6_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+          //  cm.cus_name = txt_cusName.Text();
 
         }
     }

@@ -39,6 +39,7 @@
             this.txt_quantity = new System.Windows.Forms.TextBox();
             this.lbl_quantity = new System.Windows.Forms.Label();
             this.btn_add = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_pName
@@ -145,11 +146,22 @@
             this.btn_add.UseVisualStyleBackColor = true;
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(492, 12);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(75, 23);
+            this.btn_back.TabIndex = 11;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 513);
+            this.ClientSize = new System.Drawing.Size(579, 513);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.txt_quantity);
             this.Controls.Add(this.lbl_quantity);
@@ -181,5 +193,6 @@
         private System.Windows.Forms.TextBox txt_quantity;
         private System.Windows.Forms.Label lbl_quantity;
         private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.Button btn_back;
     }
 }

@@ -41,6 +41,7 @@
             this.lbl_pName = new System.Windows.Forms.Label();
             this.lbl_productId = new System.Windows.Forms.Label();
             this.txt_productId = new System.Windows.Forms.TextBox();
+            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_edit
@@ -164,11 +165,22 @@
             this.txt_productId.Size = new System.Drawing.Size(100, 27);
             this.txt_productId.TabIndex = 23;
             // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(583, 22);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(75, 23);
+            this.btn_back.TabIndex = 24;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // EditProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(687, 549);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.txt_productId);
             this.Controls.Add(this.lbl_productId);
             this.Controls.Add(this.btn_edit);
@@ -205,5 +217,6 @@
         private System.Windows.Forms.Label lbl_pName;
         private System.Windows.Forms.Label lbl_productId;
         private System.Windows.Forms.TextBox txt_productId;
+        private System.Windows.Forms.Button btn_back;
     }
 }

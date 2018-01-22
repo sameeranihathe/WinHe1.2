@@ -103,5 +103,10 @@ namespace WInHe1._2
             home.Show();
             this.Hide();
         }
+
+        private void dgv_products_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
