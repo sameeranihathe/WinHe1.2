@@ -38,7 +38,7 @@
             this.txt_cusContact = new System.Windows.Forms.TextBox();
             this.dtp_cusDob = new System.Windows.Forms.DateTimePicker();
             this.lbl_cusDob = new System.Windows.Forms.Label();
-            this.txt_gender = new System.Windows.Forms.Label();
+            this.lbl_gender = new System.Windows.Forms.Label();
             this.cmb_cusGender = new System.Windows.Forms.ComboBox();
             this.btn_add = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -126,14 +126,14 @@
             this.lbl_cusDob.Text = "Date of Birth";
             this.lbl_cusDob.Click += new System.EventHandler(this.label6_Click);
             // 
-            // txt_gender
+            // lbl_gender
             // 
-            this.txt_gender.AutoSize = true;
-            this.txt_gender.Location = new System.Drawing.Point(54, 423);
-            this.txt_gender.Name = "txt_gender";
-            this.txt_gender.Size = new System.Drawing.Size(56, 17);
-            this.txt_gender.TabIndex = 12;
-            this.txt_gender.Text = "Gender";
+            this.lbl_gender.AutoSize = true;
+            this.lbl_gender.Location = new System.Drawing.Point(54, 423);
+            this.lbl_gender.Name = "lbl_gender";
+            this.lbl_gender.Size = new System.Drawing.Size(56, 17);
+            this.lbl_gender.TabIndex = 12;
+            this.lbl_gender.Text = "Gender";
             // 
             // cmb_cusGender
             // 
@@ -145,6 +145,7 @@
             this.cmb_cusGender.Name = "cmb_cusGender";
             this.cmb_cusGender.Size = new System.Drawing.Size(201, 24);
             this.cmb_cusGender.TabIndex = 13;
+            this.cmb_cusGender.SelectedIndexChanged += new System.EventHandler(this.cmb_cusGender_SelectedIndexChanged);
             // 
             // btn_add
             // 
@@ -163,7 +164,7 @@
             this.ClientSize = new System.Drawing.Size(713, 534);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.cmb_cusGender);
-            this.Controls.Add(this.txt_gender);
+            this.Controls.Add(this.lbl_gender);
             this.Controls.Add(this.lbl_cusDob);
             this.Controls.Add(this.dtp_cusDob);
             this.Controls.Add(this.label5);
@@ -193,7 +194,7 @@
         private System.Windows.Forms.TextBox txt_cusContact;
         private System.Windows.Forms.DateTimePicker dtp_cusDob;
         private System.Windows.Forms.Label lbl_cusDob;
-        private System.Windows.Forms.Label txt_gender;
+        private System.Windows.Forms.Label lbl_gender;
         private System.Windows.Forms.ComboBox cmb_cusGender;
         private System.Windows.Forms.Button btn_add;
     }

@@ -7,3 +7,4 @@ F:\C# projects\WInHe1.2\Model\bin\Debug\EntityFramework.xml
 F:\C# projects\WInHe1.2\Model\bin\Debug\EntityFramework.SqlServer.xml
 F:\C# projects\WInHe1.2\Model\obj\Debug\Model.dll
 F:\C# projects\WInHe1.2\Model\obj\Debug\Model.pdb
+F:\C# projects\WInHe1.2\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
