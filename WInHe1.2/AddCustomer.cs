@@ -52,5 +52,12 @@ namespace WInHe1._2
         {
 
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            Customers cus = new Customers();
+            cus.Show();
+            this.Hide();
+        }
     }
 }

@@ -10,25 +10,26 @@ using System.Windows.Forms;
 
 namespace WInHe1._2
 {
-    public partial class Invoices : Form
+    public partial class AllInvoices : Form
     {
-        public Invoices()
+        public AllInvoices()
         {
             InitializeComponent();
         }
 
         private void btn_home_Click(object sender, EventArgs e)
         {
-            Form_home home = new Form_home();
-            home.Show();
+            Form_home fm = new Form_home();
+            fm.Show();
             this.Hide();
         }
 
-        private void btn_generatedInvoices_Click(object sender, EventArgs e)
+        private void btn_invoice_Click(object sender, EventArgs e)
         {
-            AllInvoices allInvoices = new AllInvoices();
-            allInvoices.Show();
+            Invoices inv =new Invoices();
+            inv.Show();
             this.Hide();
+
         }
     }
 }

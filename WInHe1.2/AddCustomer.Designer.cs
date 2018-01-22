@@ -41,6 +41,7 @@
             this.lbl_gender = new System.Windows.Forms.Label();
             this.cmb_cusGender = new System.Windows.Forms.ComboBox();
             this.btn_add = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_cusName
@@ -157,11 +158,22 @@
             this.btn_add.UseVisualStyleBackColor = true;
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(455, 12);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(75, 23);
+            this.btn_back.TabIndex = 15;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // AddCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 534);
+            this.ClientSize = new System.Drawing.Size(623, 534);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.cmb_cusGender);
             this.Controls.Add(this.lbl_gender);
@@ -197,5 +209,6 @@
         private System.Windows.Forms.Label lbl_gender;
         private System.Windows.Forms.ComboBox cmb_cusGender;
         private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.Button btn_back;
     }
 }
