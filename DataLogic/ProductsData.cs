@@ -110,7 +110,7 @@ namespace DataLogic
            return isSaved;
        }
 
-        /*  public List<ProductsModel> GetSearchData(string txt)
+          public List<ProductsModel> GetSearchData(string txt)
           {
               List<ProductsModel> dataList = new List<ProductsModel>();
 
@@ -118,14 +118,22 @@ namespace DataLogic
               {
                   using (WinHeDbEntities context = new WinHeDbEntities())
                   {
-                      List<ProductsData> list = (from recodes in context.tbl_product where (recodes.Product_Name.Contains(txt))select recodes).ToList();
+                      List<tbl_product> list = (from recodes in context.tbl_product where (recodes.Product_Name.Contains(txt))select recodes).ToList();
 
-                      foreach (ProductsData item in list)
+                      foreach (tbl_product item in list)
                       {
                           ProductsModel pd = new ProductsModel();
 
-                          pd.product_id = item.Product_id;
+                          pd.product_id = item.ProductID;
+                          pd.product_name = item.Product_Name;
+                          pd.product_description = item.Product_Description;
+                          pd.purchase_price = item.Purchase_Price;
+                          pd.selling_price = item.Selling_price;
+                          pd.quantity = item.Quantity;
+
+                          dataList.Add(pd);
                       }
+
                   }
               }
               catch (Exception)
@@ -134,8 +142,8 @@ namespace DataLogic
                   throw;
               }
 
-              return null;
+              return dataList;
 
-          } */
+          } 
     }
 }

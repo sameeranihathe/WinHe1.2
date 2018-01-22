@@ -90,11 +90,11 @@ namespace WInHe1._2
 
         private void btn_search_Click(object sender, EventArgs e)
         {
-          //  String search_text = txt_search.Text;
+            String search_text = txt_search.Text;
 
-          //  List<ProductsModel> list = this.pbl.SearchProduct(search_text);
+           List<ProductsModel> list = this.pbl.SearchProduct(search_text);
 
-          //  dgv_products.DataSource = list;
+            dgv_products.DataSource = list;
         }
 
         private void btn_home_Click(object sender, EventArgs e)
