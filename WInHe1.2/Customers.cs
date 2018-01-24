@@ -50,5 +50,7 @@ namespace WInHe1._2
             String search_text = txt_search.Text;
 
             List<CostomerModel> list = this.cb.SearchCustomer(search_text);
+
+        }
     }
 }

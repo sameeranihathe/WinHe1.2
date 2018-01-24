@@ -27,7 +27,11 @@ namespace BusinessLogic
 
         public List<CostomerModel> SearchCustomer(string search_text)
         {
-            throw new NotImplementedException();
+            List<CostomerModel> reList = new List<CostomerModel>();
+
+            reList = this.cd.GetSearchData(search_text);
+
+            return reList;
         }
     }
 }

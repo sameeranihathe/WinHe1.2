@@ -60,5 +60,41 @@ namespace DataLogic
             return customers;
 
         }
+
+        public List<CostomerModel> GetSearchData(string search_text)
+        {
+            List<CostomerModel> list = new List<CostomerModel>();
+
+            try
+            {
+                using (WinHeDbEntities context = new WinHeDbEntities())
+                {
+                    List<tbl_customer> listdata = (from recodes in context.tbl_customer where (recodes.Customer_Name.Contains(search_text)) select recodes).ToList();
+
+                    foreach (tbl_customer item in listdata)
+                    {
+                        CostomerModel cm = new CostomerModel();
+
+                        cm.cus_address = item.Address;
+                        cm.cus_contact = Convert.ToInt32(item.ContactNo);
+                        cm.cus_dob = Convert.ToDateTime(item.DOB);
+                        cm.cus_id = item.CustomerID;
+                        cm.cus_email = item.Customer_Email;
+                        cm.cus_gender = item.Gender;
+                        cm.cus_name = item.Customer_Name;
+
+                        list.Add(cm);
+
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            return list;
+        }
     }
 }
