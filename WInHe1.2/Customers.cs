@@ -44,5 +44,11 @@ namespace WInHe1._2
             List<CostomerModel> relist = cb.getCustomer();
             dgv_customers.DataSource = relist;
         }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            String search_text = txt_search.Text;
+
+            List<CostomerModel> list = this.cb.SearchCustomer(search_text);
     }
 }

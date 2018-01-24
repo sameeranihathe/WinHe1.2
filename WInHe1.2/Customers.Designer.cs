@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.dgv_customers = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_search = new System.Windows.Forms.TextBox();
             this.btn_search = new System.Windows.Forms.Button();
             this.btn_home = new System.Windows.Forms.Button();
             this.btn_add = new System.Windows.Forms.Button();
@@ -45,12 +45,12 @@
             this.dgv_customers.Size = new System.Drawing.Size(719, 357);
             this.dgv_customers.TabIndex = 0;
             // 
-            // textBox1
+            // txt_search
             // 
-            this.textBox1.Location = new System.Drawing.Point(42, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(421, 22);
-            this.textBox1.TabIndex = 1;
+            this.txt_search.Location = new System.Drawing.Point(42, 34);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.Size = new System.Drawing.Size(421, 22);
+            this.txt_search.TabIndex = 1;
             // 
             // btn_search
             // 
@@ -60,6 +60,7 @@
             this.btn_search.TabIndex = 2;
             this.btn_search.Text = "Search";
             this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // btn_home
             // 
@@ -89,7 +90,7 @@
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.btn_home);
             this.Controls.Add(this.btn_search);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_search);
             this.Controls.Add(this.dgv_customers);
             this.Name = "Customers";
             this.Text = "Customers";
@@ -103,7 +104,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgv_customers;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_search;
         private System.Windows.Forms.Button btn_search;
         private System.Windows.Forms.Button btn_home;
         private System.Windows.Forms.Button btn_add;

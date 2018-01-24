@@ -35,9 +35,9 @@
             // 
             // btn_product
             // 
-            this.btn_product.Location = new System.Drawing.Point(107, 171);
+            this.btn_product.Location = new System.Drawing.Point(95, 171);
             this.btn_product.Name = "btn_product";
-            this.btn_product.Size = new System.Drawing.Size(75, 36);
+            this.btn_product.Size = new System.Drawing.Size(87, 36);
             this.btn_product.TabIndex = 0;
             this.btn_product.Text = "Product";
             this.btn_product.UseVisualStyleBackColor = true;
@@ -45,9 +45,9 @@
             // 
             // btn_customers
             // 
-            this.btn_customers.Location = new System.Drawing.Point(222, 171);
+            this.btn_customers.Location = new System.Drawing.Point(213, 171);
             this.btn_customers.Name = "btn_customers";
-            this.btn_customers.Size = new System.Drawing.Size(84, 36);
+            this.btn_customers.Size = new System.Drawing.Size(93, 36);
             this.btn_customers.TabIndex = 1;
             this.btn_customers.Text = "Customers";
             this.btn_customers.UseVisualStyleBackColor = true;

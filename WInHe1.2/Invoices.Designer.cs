@@ -39,10 +39,21 @@
             this.lbl_productID = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_productName = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.lbl_quantity = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dgv_invoice = new System.Windows.Forms.DataGridView();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.btn_AddtoInvoice = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btn_searchCustomer = new System.Windows.Forms.Button();
+            this.btn_print = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_products)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_invoice)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +70,7 @@
             // 
             // btn_generatedInvoices
             // 
+            this.btn_generatedInvoices.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_generatedInvoices.Location = new System.Drawing.Point(783, 30);
             this.btn_generatedInvoices.Name = "btn_generatedInvoices";
             this.btn_generatedInvoices.Size = new System.Drawing.Size(179, 30);
@@ -69,9 +81,10 @@
             // 
             // btn_home
             // 
-            this.btn_home.Location = new System.Drawing.Point(1000, 34);
+            this.btn_home.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_home.Location = new System.Drawing.Point(960, 18);
             this.btn_home.Name = "btn_home";
-            this.btn_home.Size = new System.Drawing.Size(75, 23);
+            this.btn_home.Size = new System.Drawing.Size(103, 30);
             this.btn_home.TabIndex = 2;
             this.btn_home.Text = "Home";
             this.btn_home.UseVisualStyleBackColor = true;
@@ -79,6 +92,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btn_home);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1096, 71);
@@ -86,16 +100,18 @@
             // 
             // txt_search
             // 
+            this.txt_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_search.Location = new System.Drawing.Point(35, 101);
             this.txt_search.Name = "txt_search";
-            this.txt_search.Size = new System.Drawing.Size(364, 22);
+            this.txt_search.Size = new System.Drawing.Size(364, 26);
             this.txt_search.TabIndex = 4;
             // 
             // btn_search
             // 
+            this.btn_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_search.Location = new System.Drawing.Point(444, 99);
             this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(75, 23);
+            this.btn_search.Size = new System.Drawing.Size(95, 37);
             this.btn_search.TabIndex = 5;
             this.btn_search.Text = "Search";
             this.btn_search.UseVisualStyleBackColor = true;
@@ -152,20 +168,11 @@
             this.lbl_productName.Text = "label3";
             this.lbl_productName.Click += new System.EventHandler(this.lbl_productName_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "label3";
-            // 
             // lbl_quantity
             // 
             this.lbl_quantity.AutoSize = true;
             this.lbl_quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_quantity.Location = new System.Drawing.Point(848, 325);
+            this.lbl_quantity.Location = new System.Drawing.Point(704, 318);
             this.lbl_quantity.Name = "lbl_quantity";
             this.lbl_quantity.Size = new System.Drawing.Size(71, 20);
             this.lbl_quantity.TabIndex = 12;
@@ -175,7 +182,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(975, 318);
+            this.textBox1.Location = new System.Drawing.Point(831, 311);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 27);
             this.textBox1.TabIndex = 13;
@@ -186,18 +193,133 @@
             this.dgv_invoice.Location = new System.Drawing.Point(36, 359);
             this.dgv_invoice.Name = "dgv_invoice";
             this.dgv_invoice.RowTemplate.Height = 24;
-            this.dgv_invoice.Size = new System.Drawing.Size(1039, 150);
+            this.dgv_invoice.Size = new System.Drawing.Size(1039, 169);
             this.dgv_invoice.TabIndex = 14;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(439, 551);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 27);
+            this.textBox2.TabIndex = 15;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(371, 555);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 20);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Total";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(562, 555);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(76, 20);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Discount";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(653, 550);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 27);
+            this.textBox3.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(858, 555);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(90, 20);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Total Price";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(972, 552);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 27);
+            this.textBox4.TabIndex = 19;
+            // 
+            // btn_AddtoInvoice
+            // 
+            this.btn_AddtoInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AddtoInvoice.Location = new System.Drawing.Point(948, 309);
+            this.btn_AddtoInvoice.Name = "btn_AddtoInvoice";
+            this.btn_AddtoInvoice.Size = new System.Drawing.Size(127, 39);
+            this.btn_AddtoInvoice.TabIndex = 21;
+            this.btn_AddtoInvoice.Text = "Add to Invoice";
+            this.btn_AddtoInvoice.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(33, 592);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(87, 20);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Customer:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(127, 592);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(53, 20);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "label8";
+            // 
+            // btn_searchCustomer
+            // 
+            this.btn_searchCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_searchCustomer.Location = new System.Drawing.Point(375, 592);
+            this.btn_searchCustomer.Name = "btn_searchCustomer";
+            this.btn_searchCustomer.Size = new System.Drawing.Size(164, 33);
+            this.btn_searchCustomer.TabIndex = 24;
+            this.btn_searchCustomer.Text = "Search Customer";
+            this.btn_searchCustomer.UseVisualStyleBackColor = true;
+            // 
+            // btn_print
+            // 
+            this.btn_print.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_print.Location = new System.Drawing.Point(972, 601);
+            this.btn_print.Name = "btn_print";
+            this.btn_print.Size = new System.Drawing.Size(99, 36);
+            this.btn_print.TabIndex = 25;
+            this.btn_print.Text = "Print";
+            this.btn_print.UseVisualStyleBackColor = true;
             // 
             // Invoices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1120, 609);
+            this.ClientSize = new System.Drawing.Size(1123, 659);
+            this.Controls.Add(this.btn_print);
+            this.Controls.Add(this.btn_searchCustomer);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btn_AddtoInvoice);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.dgv_invoice);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lbl_quantity);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.lbl_productName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_productID);
@@ -205,12 +327,13 @@
             this.Controls.Add(this.dgv_products);
             this.Controls.Add(this.btn_search);
             this.Controls.Add(this.txt_search);
-            this.Controls.Add(this.btn_home);
             this.Controls.Add(this.btn_generatedInvoices);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "Invoices";
             this.Text = "Invoices";
+            this.Load += new System.EventHandler(this.Invoices_Load);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_products)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_invoice)).EndInit();
             this.ResumeLayout(false);
@@ -231,9 +354,19 @@
         private System.Windows.Forms.Label lbl_productID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_productName;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbl_quantity;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dgv_invoice;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button btn_AddtoInvoice;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btn_searchCustomer;
+        private System.Windows.Forms.Button btn_print;
     }
 }

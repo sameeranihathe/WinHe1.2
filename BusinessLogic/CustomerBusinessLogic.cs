@@ -24,5 +24,10 @@ namespace BusinessLogic
 
             return returnList;
         }
+
+        public List<CostomerModel> SearchCustomer(string search_text)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

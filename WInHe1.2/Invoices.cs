@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Model;
 namespace WInHe1._2
 {
     public partial class Invoices : Form
@@ -29,6 +29,41 @@ namespace WInHe1._2
             AllInvoices allInvoices = new AllInvoices();
             allInvoices.Show();
             this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_productName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Invoices_Load(object sender, EventArgs e)
+        {
+            setData();
+            dgv_products.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+        private void setData()
+        {
+            
         }
     }
 }
