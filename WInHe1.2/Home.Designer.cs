@@ -35,32 +35,38 @@
             // 
             // btn_product
             // 
-            this.btn_product.Location = new System.Drawing.Point(95, 171);
+            this.btn_product.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_product.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_product.Location = new System.Drawing.Point(82, 173);
             this.btn_product.Name = "btn_product";
-            this.btn_product.Size = new System.Drawing.Size(87, 36);
+            this.btn_product.Size = new System.Drawing.Size(115, 36);
             this.btn_product.TabIndex = 0;
             this.btn_product.Text = "Product";
-            this.btn_product.UseVisualStyleBackColor = true;
+            this.btn_product.UseVisualStyleBackColor = false;
             this.btn_product.Click += new System.EventHandler(this.btn_product_Click);
             // 
             // btn_customers
             // 
-            this.btn_customers.Location = new System.Drawing.Point(213, 171);
+            this.btn_customers.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_customers.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_customers.Location = new System.Drawing.Point(216, 173);
             this.btn_customers.Name = "btn_customers";
-            this.btn_customers.Size = new System.Drawing.Size(93, 36);
+            this.btn_customers.Size = new System.Drawing.Size(116, 36);
             this.btn_customers.TabIndex = 1;
             this.btn_customers.Text = "Customers";
-            this.btn_customers.UseVisualStyleBackColor = true;
+            this.btn_customers.UseVisualStyleBackColor = false;
             this.btn_customers.Click += new System.EventHandler(this.btn_customers_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(341, 171);
+            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(348, 173);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(84, 36);
+            this.button3.Size = new System.Drawing.Size(122, 36);
             this.button3.TabIndex = 2;
             this.button3.Text = "Invoices";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form_home

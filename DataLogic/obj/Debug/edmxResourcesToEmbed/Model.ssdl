@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="CustomerID" />
     </Key>
-    <Property Name="CustomerID" Type="int" Nullable="false" />
+    <Property Name="CustomerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Customer_Name" Type="varchar" MaxLength="50" />
     <Property Name="Customer_Email" Type="varchar" MaxLength="50" />
     <Property Name="Address" Type="varchar" MaxLength="50" />

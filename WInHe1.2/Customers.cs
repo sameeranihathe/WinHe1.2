@@ -51,6 +51,8 @@ namespace WInHe1._2
 
             List<CostomerModel> list = this.cb.SearchCustomer(search_text);
 
+            dgv_customers.DataSource = list;
+
         }
     }
 }

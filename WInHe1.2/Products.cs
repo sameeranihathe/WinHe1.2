@@ -80,12 +80,21 @@ namespace WInHe1._2
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            int rowIndex = dgv_products.CurrentCell.RowIndex;
-            String productId = dgv_products.Rows[rowIndex].Cells["product_Id"].Value.ToString();
-            int pid = Convert.ToInt32(productId);
-            pbl.DeleteProduct(pid);
+            DialogResult dialogResult = MessageBox.Show("Do you want to delete this data?", "Some Title", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                int rowIndex = dgv_products.CurrentCell.RowIndex;
+                String productId = dgv_products.Rows[rowIndex].Cells["product_Id"].Value.ToString();
+                int pid = Convert.ToInt32(productId);
+                pbl.DeleteProduct(pid);
 
-            SetData();
+                SetData();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do something else
+            }
+            
         }
 
         private void btn_search_Click(object sender, EventArgs e)

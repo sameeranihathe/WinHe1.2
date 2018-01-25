@@ -11,20 +11,29 @@ namespace DataLogic
 
         public void Insert(CostomerModel cm)
         {
-            using (WinHeDbEntities db = new WinHeDbEntities())
+            try
             {
-                tbl_customer tbl = new tbl_customer();
+                using (WinHeDbEntities db = new WinHeDbEntities())
+                {
+                    tbl_customer tbl = new tbl_customer();
 
-                tbl.Customer_Name = cm.cus_name;
-                tbl.Customer_Email = cm.cus_email;
-                tbl.Address = cm.cus_address;
-                tbl.ContactNo = cm.cus_contact;
-                tbl.DOB = cm.cus_dob;
-                tbl.Gender = cm.cus_gender;
+                    tbl.Customer_Name = cm.cus_name;
+                    tbl.Customer_Email = cm.cus_email;
+                    tbl.Address = cm.cus_address;
+                    tbl.ContactNo = cm.cus_contact;
+                    tbl.DOB = cm.cus_dob;
+                    tbl.Gender = cm.cus_gender;
 
-                db.tbl_customer.Add(tbl);
-                db.SaveChanges();
+                    db.tbl_customer.Add(tbl);
+                    db.SaveChanges();
+                }
             }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+            
         }
 
         public List<CostomerModel> GetData()
@@ -39,7 +48,7 @@ namespace DataLogic
                     foreach (tbl_customer item in list)
                     {
                         CostomerModel cm = new CostomerModel();
-
+                        cm.cus_id = item.CustomerID;
                         cm.cus_name = item.Customer_Name;
                         cm.cus_email = item.Customer_Email;
                         cm.cus_address = item.Address;

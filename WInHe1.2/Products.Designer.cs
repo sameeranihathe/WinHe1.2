@@ -40,25 +40,30 @@
             // 
             // btn_search
             // 
-            this.btn_search.Location = new System.Drawing.Point(460, 24);
+            this.btn_search.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_search.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_search.Location = new System.Drawing.Point(479, 12);
             this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(88, 29);
+            this.btn_search.Size = new System.Drawing.Size(88, 41);
             this.btn_search.TabIndex = 0;
             this.btn_search.Text = "Search";
-            this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.UseVisualStyleBackColor = false;
             this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // txt_search
             // 
+            this.txt_search.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_search.Location = new System.Drawing.Point(45, 31);
             this.txt_search.Name = "txt_search";
-            this.txt_search.Size = new System.Drawing.Size(379, 22);
+            this.txt_search.Size = new System.Drawing.Size(379, 34);
             this.txt_search.TabIndex = 1;
             this.txt_search.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // dgv_products
             // 
+            this.dgv_products.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
             this.dgv_products.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_products.GridColor = System.Drawing.SystemColors.Control;
             this.dgv_products.Location = new System.Drawing.Point(45, 77);
             this.dgv_products.Name = "dgv_products";
             this.dgv_products.RowTemplate.Height = 24;
@@ -68,42 +73,53 @@
             // 
             // btn_add
             // 
+            this.btn_add.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_add.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_add.Location = new System.Drawing.Point(362, 481);
             this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(75, 23);
+            this.btn_add.Size = new System.Drawing.Size(75, 42);
             this.btn_add.TabIndex = 3;
             this.btn_add.Text = "Add";
-            this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.UseVisualStyleBackColor = false;
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // btn_edit
             // 
+            this.btn_edit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_edit.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_edit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_edit.Location = new System.Drawing.Point(506, 481);
             this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(75, 23);
+            this.btn_edit.Size = new System.Drawing.Size(75, 42);
             this.btn_edit.TabIndex = 4;
             this.btn_edit.Text = "Edit";
-            this.btn_edit.UseVisualStyleBackColor = true;
+            this.btn_edit.UseVisualStyleBackColor = false;
             this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
             // btn_delete
             // 
-            this.btn_delete.Location = new System.Drawing.Point(642, 481);
+            this.btn_delete.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_delete.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_delete.Location = new System.Drawing.Point(631, 481);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(75, 23);
+            this.btn_delete.Size = new System.Drawing.Size(86, 42);
             this.btn_delete.TabIndex = 5;
             this.btn_delete.Text = "Delete";
-            this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.UseVisualStyleBackColor = false;
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btn_home
             // 
-            this.btn_home.Location = new System.Drawing.Point(642, 27);
+            this.btn_home.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_home.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_home.Location = new System.Drawing.Point(619, 12);
             this.btn_home.Name = "btn_home";
-            this.btn_home.Size = new System.Drawing.Size(75, 23);
+            this.btn_home.Size = new System.Drawing.Size(98, 41);
             this.btn_home.TabIndex = 6;
             this.btn_home.Text = "Home";
-            this.btn_home.UseVisualStyleBackColor = true;
+            this.btn_home.UseVisualStyleBackColor = false;
             this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
             // Products
