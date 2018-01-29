@@ -53,7 +53,7 @@
             // txt_search
             // 
             this.txt_search.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_search.Location = new System.Drawing.Point(45, 31);
+            this.txt_search.Location = new System.Drawing.Point(45, 19);
             this.txt_search.Name = "txt_search";
             this.txt_search.Size = new System.Drawing.Size(379, 34);
             this.txt_search.TabIndex = 1;
