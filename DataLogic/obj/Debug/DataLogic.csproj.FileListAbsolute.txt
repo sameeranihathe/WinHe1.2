@@ -10,3 +10,5 @@ F:\C# projects\WInHe1.2\DataLogic\bin\Debug\EntityFramework.xml
 F:\C# projects\WInHe1.2\DataLogic\bin\Debug\EntityFramework.SqlServer.xml
 F:\C# projects\WInHe1.2\DataLogic\obj\Debug\DataLogic.dll
 F:\C# projects\WInHe1.2\DataLogic\obj\Debug\DataLogic.pdb
+F:\C# projects\WInHe1.2\DataLogic\bin\Debug\Model.dll.config
+F:\C# projects\WInHe1.2\DataLogic\obj\Debug\DataLogic.csproj.CoreCompileInputs.cache

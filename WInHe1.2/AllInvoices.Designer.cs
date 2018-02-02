@@ -39,50 +39,59 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(37, 26);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(52, 33);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(239, 22);
+            this.textBox1.Size = new System.Drawing.Size(239, 27);
             this.textBox1.TabIndex = 0;
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(305, 26);
+            this.comboBox1.Location = new System.Drawing.Point(311, 32);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(103, 24);
+            this.comboBox1.Size = new System.Drawing.Size(103, 28);
             this.comboBox1.TabIndex = 1;
             // 
             // btn_search
             // 
-            this.btn_search.Location = new System.Drawing.Point(436, 27);
+            this.btn_search.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_search.Location = new System.Drawing.Point(431, 32);
             this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(75, 23);
+            this.btn_search.Size = new System.Drawing.Size(75, 28);
             this.btn_search.TabIndex = 2;
             this.btn_search.Text = "Search";
-            this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.UseVisualStyleBackColor = false;
             // 
             // btn_home
             // 
-            this.btn_home.Location = new System.Drawing.Point(731, 26);
+            this.btn_home.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_home.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_home.Location = new System.Drawing.Point(731, 33);
             this.btn_home.Name = "btn_home";
-            this.btn_home.Size = new System.Drawing.Size(75, 23);
+            this.btn_home.Size = new System.Drawing.Size(75, 28);
             this.btn_home.TabIndex = 3;
             this.btn_home.Text = "Home";
-            this.btn_home.UseVisualStyleBackColor = true;
+            this.btn_home.UseVisualStyleBackColor = false;
             this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
             // btn_invoice
             // 
-            this.btn_invoice.Location = new System.Drawing.Point(635, 25);
+            this.btn_invoice.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_invoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_invoice.Location = new System.Drawing.Point(641, 33);
             this.btn_invoice.Name = "btn_invoice";
-            this.btn_invoice.Size = new System.Drawing.Size(75, 23);
+            this.btn_invoice.Size = new System.Drawing.Size(75, 28);
             this.btn_invoice.TabIndex = 4;
             this.btn_invoice.Text = "Invoice";
-            this.btn_invoice.UseVisualStyleBackColor = true;
+            this.btn_invoice.UseVisualStyleBackColor = false;
             this.btn_invoice.Click += new System.EventHandler(this.btn_invoice_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(37, 84);
             this.dataGridView1.Name = "dataGridView1";

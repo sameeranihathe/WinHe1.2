@@ -72,9 +72,9 @@
             // 
             this.btn_generatedInvoices.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_generatedInvoices.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_generatedInvoices.Location = new System.Drawing.Point(716, 18);
+            this.btn_generatedInvoices.Location = new System.Drawing.Point(617, 18);
             this.btn_generatedInvoices.Name = "btn_generatedInvoices";
-            this.btn_generatedInvoices.Size = new System.Drawing.Size(179, 37);
+            this.btn_generatedInvoices.Size = new System.Drawing.Size(278, 37);
             this.btn_generatedInvoices.TabIndex = 1;
             this.btn_generatedInvoices.Text = "View Generated Invoices";
             this.btn_generatedInvoices.UseVisualStyleBackColor = false;
@@ -132,6 +132,7 @@
             this.dgv_products.RowTemplate.Height = 24;
             this.dgv_products.Size = new System.Drawing.Size(1040, 157);
             this.dgv_products.TabIndex = 6;
+            this.dgv_products.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_products_CellContentClick);
             // 
             // label
             // 

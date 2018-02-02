@@ -14,5 +14,7 @@ namespace Model
         public decimal purchase_price { get; set; }
         public decimal selling_price { get; set; }
         public int quantity { get; set; }
+
+        
     }
 }

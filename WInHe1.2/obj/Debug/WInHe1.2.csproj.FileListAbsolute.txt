@@ -24,3 +24,7 @@ F:\C# projects\WInHe1.2\WInHe1.2\obj\Debug\WInHe1.2.exe
 F:\C# projects\WInHe1.2\WInHe1.2\obj\Debug\WInHe1.2.pdb
 F:\C# projects\WInHe1.2\WInHe1.2\obj\Debug\WInHe1._2.AddCustomer.resources
 F:\C# projects\WInHe1.2\WInHe1.2\obj\Debug\WInHe1._2.AllInvoices.resources
+F:\C# projects\WInHe1.2\WInHe1.2\bin\Debug\BusinessLogic.dll.config
+F:\C# projects\WInHe1.2\WInHe1.2\bin\Debug\Model.dll.config
+F:\C# projects\WInHe1.2\WInHe1.2\bin\Debug\DataLogic.dll.config
+F:\C# projects\WInHe1.2\WInHe1.2\obj\Debug\WInHe1.2.csproj.CoreCompileInputs.cache

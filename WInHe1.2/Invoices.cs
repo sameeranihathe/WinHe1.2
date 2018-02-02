@@ -8,10 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Model;
+using BusinessLogic;
 namespace WInHe1._2
 {
     public partial class Invoices : Form
     {
+        ProductsBusinessLogic pb = new ProductsBusinessLogic();
+
         public Invoices()
         {
             InitializeComponent();
@@ -58,12 +61,23 @@ namespace WInHe1._2
 
         private void Invoices_Load(object sender, EventArgs e)
         {
+
             setData();
             dgv_products.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_products.Columns[3].Visible = false;
+
+
         }
         private void setData()
         {
+            List<ProductsModel> relist = pb.GetProduct();
+            dgv_products.DataSource = relist;
             
+        }
+
+        private void dgv_products_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
